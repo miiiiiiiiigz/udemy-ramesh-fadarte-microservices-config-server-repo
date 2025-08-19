@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: DEPARTMENT-SERVICE
+  boot:
+    message: Hello, Department Service!
 
   datasource:
     url: jdbc:mysql://localhost:3306/department_db
