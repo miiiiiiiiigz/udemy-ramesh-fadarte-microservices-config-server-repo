@@ -1,0 +1,26 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ORGANIZATION-SERVICE
+  boot:
+    message: Hello, Organization Service! Spring Cloud Bus Demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/organization_db
+    username: root
+    password: password
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  instance:
+    client:
+      serverUrl:
+        defaultZone: http://localhost:8761/eureka/
